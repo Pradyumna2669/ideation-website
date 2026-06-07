@@ -24,7 +24,7 @@ const JournalOverview = () => {
 
               The International Journal of Research
               is an academic publication initiative
-              established under Ideation Welfare Society
+              established under Ideathon Welfare Society
               to encourage research-oriented thinking
               and scholarly contribution.
 

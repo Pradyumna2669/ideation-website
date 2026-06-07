@@ -3,7 +3,7 @@ import { MapPin, Mail, Phone } from "lucide-react";
 const ContactForm = () => {
   return (
     <section className="bg-slate-50 py-12">
-      <div className="max-w-5xl mx-auto px-8 lg:px-12">
+      <div className="max-w-5xl mx-auto px-4 sm:px-8 lg:px-12">
 
         <div className="grid lg:grid-cols-[0.75fr_1.25fr] gap-8 items-start">
 
@@ -12,10 +12,10 @@ const ContactForm = () => {
           <div>
 
             <p className="text-orange-500 font-semibold uppercase tracking-[0.2em] text-sm">
-              Contact Ideation Welfare Society
+              Contact Ideathon Welfare Society
             </p>
 
-            <h1 className="mt-3 text-4xl md:text-5xl font-bold text-slate-950 leading-tight">
+            <h1 className="mt-3 text-2xl sm:text-4xl md:text-5xl font-bold text-slate-950 leading-tight">
               Let&apos;s Start Your
               <br />
               Academic Journey
@@ -38,11 +38,11 @@ const ContactForm = () => {
                   border
                   border-slate-200
                   rounded-2xl
-                  p-5
+                  p-4 sm:p-5
                   shadow-sm
                 "
               >
-                <div className="flex items-start gap-3">
+                <div className="flex items-start gap-2 sm:gap-3">
 
                   <div
                     className="
@@ -87,11 +87,11 @@ const ContactForm = () => {
                   border
                   border-slate-200
                   rounded-2xl
-                  p-5
+                  p-4 sm:p-5
                   shadow-sm
                 "
               >
-                <div className="flex items-start gap-3">
+                <div className="flex items-start gap-2 sm:gap-3">
 
                   <div
                     className="
@@ -117,7 +117,7 @@ const ContactForm = () => {
                     </h3>
 
                     <p className="text-sm text-slate-600 mt-1">
-                      ideation@example.com
+                      ideathon@example.com
                     </p>
                   </div>
 
@@ -132,11 +132,11 @@ const ContactForm = () => {
                   border
                   border-slate-200
                   rounded-2xl
-                  p-5
+                  p-4 sm:p-5
                   shadow-sm
                 "
               >
-                <div className="flex items-start gap-3">
+                <div className="flex items-start gap-2 sm:gap-3">
 
                   <div
                     className="
@@ -188,11 +188,11 @@ const ContactForm = () => {
                 border-blue-100
                 rounded-2xl
                 shadow-lg
-                p-6 md:p-8
+                p-4 sm:p-6 md:p-8
               "
             >
 
-              <h2 className="text-3xl font-bold text-slate-950">
+              <h2 className="text-xl sm:text-3xl font-bold text-slate-950">
                 Send Us Your Enquiry
               </h2>
 

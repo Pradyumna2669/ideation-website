@@ -29,7 +29,7 @@ export default function AbhyasikaCTASection() {
                 </p>
 
                 <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white">
-                  Join Ideation Abhyasika
+                  Join Ideathon Abhyasika
                 </h2>
 
                 <p className="mt-4 text-slate-300">

@@ -30,7 +30,7 @@ export default function HeroSection() {
           <div className="max-w-3xl text-white">
             {/* Label */}
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-orange-400">
-              Ideation Test Series
+              Ideathon Test Series
             </p>
 
             {/* Heading */}

@@ -15,7 +15,7 @@ const TutorialCTA = () => {
           <h2 className="mt-3 text-3xl md:text-4xl font-bold">
             Start Your Academic Journey
             <span className="block">
-              With Ideation Tutorial
+              With Ideathon Tutorial
             </span>
           </h2>
 

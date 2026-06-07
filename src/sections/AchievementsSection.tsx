@@ -58,7 +58,7 @@ export default function AchievementsSection() {
 
         {/* Posters */}
 
-        <div className="mt-10 grid gap-5 lg:grid-cols-3 items-start">
+        <div className="mt-10 grid gap-5 md:grid-cols-3 items-start">
 
           {posters.map((poster) => (
             <div
@@ -96,7 +96,7 @@ export default function AchievementsSection() {
 
           {highlights.map((item) => (
             <div
-              key={item.title}
+              key={`${item.title}-${item.value}`}
               className="
                 rounded-xl
                 border

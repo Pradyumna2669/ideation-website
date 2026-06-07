@@ -16,7 +16,7 @@ const SpecialPrograms = () => {
           h-full
           w-full
           object-cover
-          opacity-[0.5]
+          opacity-[1]
         "
       />
 

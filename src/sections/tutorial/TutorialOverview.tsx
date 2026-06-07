@@ -22,7 +22,7 @@ const TutorialOverview = () => {
               alt="Classroom Learning"
               className="
                 w-full
-                h-[380px]
+                h-[260px] sm:h-[380px]
                 lg:h-[420px]
                 object-cover
                 rounded-3xl
@@ -36,7 +36,7 @@ const TutorialOverview = () => {
           <div>
 
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-600">
-              About Ideation Tutorial
+              About Ideathon Tutorial
             </p>
 
             <h2 className="mt-3 text-3xl md:text-4xl font-bold text-slate-900 leading-tight">
@@ -44,7 +44,7 @@ const TutorialOverview = () => {
             </h2>
 
             <p className="mt-4 text-slate-600 leading-relaxed">
-              Ideation Tutorial provides structured coaching for students
+              Ideathon Tutorial provides structured coaching for students
               from 8th to 12th standard across IB, IGCSE, ICSE, CBSE and
               State Board curricula. Through concept-based learning,
               experienced faculty and continuous mentorship, students

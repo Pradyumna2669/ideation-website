@@ -65,7 +65,7 @@ const InstitutionsSection = () => {
 
         {/* Cards */}
 
-        <div className="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
 
           {institutions.map((institution) => (
             <Link
@@ -73,7 +73,8 @@ const InstitutionsSection = () => {
               to={institution.route}
               className="
                 group
-                aspect-square
+                aspect-auto sm:aspect-square
+                min-h-[220px] sm:min-h-0
                 rounded-2xl
                 bg-white/95
                 backdrop-blur-sm

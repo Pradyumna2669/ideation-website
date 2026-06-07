@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import journalCover from "../../assets/journal-cover.png";
 
 const JournalHero = () => {
   return (
@@ -12,7 +13,7 @@ const JournalHero = () => {
           <div>
 
             <p className="text-orange-500 font-semibold uppercase tracking-wider">
-              Ideation Welfare Society
+              Ideathon Welfare Society
             </p>
 
             <h1 className="mt-4 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-blue-950">
@@ -87,16 +88,14 @@ const JournalHero = () => {
           </div>
 
           {/* RIGHT */}
-          <div className="flex justify-center">
-
-            <div className="w-full max-w-md h-[500px] rounded-3xl border-2 border-dashed border-slate-300 bg-white flex items-center justify-center">
-
-              <p className="text-slate-400 text-lg font-medium">
-                Journal Image Placeholder
-              </p>
-
+          <div className="flex justify-center w-full">
+            <div className="w-full max-w-[320px] sm:max-w-md h-[400px] sm:h-[500px] rounded-3xl overflow-hidden shadow-2xl bg-white border border-slate-100 flex items-center justify-center">
+              <img
+                src={journalCover}
+                alt="International Journal of Research"
+                className="w-full h-full object-cover"
+              />
             </div>
-
           </div>
 
         </div>

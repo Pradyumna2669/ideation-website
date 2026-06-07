@@ -1,7 +1,7 @@
 import SectionHeading from "../components/SectionHeading";
 import { galleryItems } from "../data/gallery";
 
-const LifeAtIdeationSection = () => {
+const LifeAtIdeathonSection = () => {
   return (
     <section
       id="life"
@@ -10,7 +10,7 @@ const LifeAtIdeationSection = () => {
       <div className="max-w-7xl mx-auto px-6">
 
         <SectionHeading
-          eyebrow="Life at Ideation"
+          eyebrow="Life at Ideathon"
           title="More Than Just a Classroom"
           subtitle="Interactive learning, practical experiences, focused study and a supportive community environment."
         />
@@ -115,4 +115,4 @@ function GalleryCard({
   );
 }
 
-export default LifeAtIdeationSection;
+export default LifeAtIdeathonSection;

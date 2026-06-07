@@ -33,7 +33,7 @@ export default function AbhyasikaHeroSection() {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Ideation Abhyasika"
+          alt="Ideathon Abhyasika"
           className="h-full w-full object-cover"
         />
 
@@ -45,7 +45,7 @@ export default function AbhyasikaHeroSection() {
         <div className="max-w-3xl">
 
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-orange-400">
-            Ideation Abhyasika
+            Ideathon Abhyasika
           </p>
 
           <h1 className="text-4xl font-bold leading-tight text-white md:text-5xl">

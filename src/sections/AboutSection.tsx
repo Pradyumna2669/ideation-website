@@ -20,7 +20,7 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-6">
 
         <SectionHeading
-          title="About Ideation Welfare Society"
+          title="About Ideathon Welfare Society"
           subtitle="Shaping Minds Since 2009"
         />
 
@@ -82,7 +82,7 @@ export default function AboutSection() {
             </h3>
 
             <p className="mt-4 leading-relaxed text-slate-600">
-              Since 2009, Ideation Welfare Society has nurtured young
+              Since 2009, Ideathon Welfare Society has nurtured young
               minds through concept-based learning, academic excellence,
               mentorship and practical education. Across our institutions,
               students develop confidence, curiosity and the skills

@@ -21,14 +21,14 @@ const features = [
   },
 ];
 
-export default function WhyChooseIdeationSection() {
+export default function WhyChooseIdeathonSection() {
   return (
     <section className="bg-white py-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
         <div className="mx-auto mb-8 max-w-3xl text-center">
           <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-orange-500">
-            What Makes Ideation Different
+            What Makes Ideathon Different
           </p>
 
           <h2 className="mb-3 text-3xl font-bold text-blue-900 md:text-4xl">
