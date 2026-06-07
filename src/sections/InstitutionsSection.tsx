@@ -32,12 +32,11 @@ export default function InstitutionsSection() {
   return (
     <section
       id="institutions"
-      className="relative py-28 overflow-hidden"
+      className="relative py-16 md:py-24 lg:py-28 overflow-hidden"
       style={{
         backgroundImage: `url(${institutionsBg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundAttachment: "fixed",
       }}
     >
       {/* Dark Overlay */}
@@ -55,13 +54,14 @@ export default function InstitutionsSection() {
             Our Institutions
           </p>
 
-          <h2 className="mt-4 text-4xl md:text-5xl font-bold text-white">
+          <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-white">
             Educational Programs Under
-            <br />
-            Ideation Welfare Society
+            <span className="block">
+              Ideation Welfare Society
+            </span>
           </h2>
 
-          <p className="mt-6 text-slate-300 text-lg leading-relaxed">
+          <p className="mt-4 md:mt-6 text-slate-300 text-base md:text-lg leading-relaxed">
             A diverse ecosystem of educational initiatives dedicated to
             academic excellence, student development, concept-based
             learning, and lifelong growth.
@@ -70,7 +70,7 @@ export default function InstitutionsSection() {
 
         {/* Cards */}
 
-        <div className="grid lg:grid-cols-3 gap-8 mt-20">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 md:mt-20">
 
           {institutions.map((institution, index) => (
             <Link

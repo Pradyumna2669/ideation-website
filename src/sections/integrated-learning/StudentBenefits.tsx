@@ -103,7 +103,7 @@ function BenefitCard({ benefit }: { benefit: Benefit }) {
   const Icon = benefit.icon;
 
   return (
-    <div className="w-full md:w-[55%] md:min-w-[420px]">
+    <div className="w-full md:w-[55%] md:min-w-[380px] max-w-full">
       <div className="backdrop-blur-md bg-white/90 rounded-2xl p-5 border border-white/20 shadow-xl">
         <div className="flex items-start gap-4">
           <div className="flex-shrink-0">

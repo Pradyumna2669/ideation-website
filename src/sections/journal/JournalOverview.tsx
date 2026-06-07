@@ -1,10 +1,10 @@
 const JournalOverview = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-14 md:py-24 bg-white">
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* LEFT CONTENT */}
           <div>
@@ -13,7 +13,7 @@ const JournalOverview = () => {
               About The Journal
             </p>
 
-            <h2 className="mt-4 text-4xl font-bold text-blue-950 leading-tight">
+            <h2 className="mt-4 text-3xl md:text-4xl font-bold text-blue-950 leading-tight">
 
               Promoting Research,
               Innovation, and Scholarly Contribution

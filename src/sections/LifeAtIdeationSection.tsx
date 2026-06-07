@@ -5,8 +5,8 @@ const LifeAtIdeationSection = () => {
   const [classroom, lab, study, community] = galleryItems;
 
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="life" className="py-14 md:py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
         <SectionHeading
           eyebrow="Life at Ideation"
@@ -14,45 +14,33 @@ const LifeAtIdeationSection = () => {
           subtitle="We believe in holistic development. From interactive classes and lab sessions to focused study environments and community activities, learning at Ideation extends far beyond textbooks."
         />
 
-        <div className="mt-16 grid lg:grid-cols-3 gap-6">
+        {/* Mobile / Tablet: simple grid */}
+        <div className="mt-10 md:mt-16 grid grid-cols-1 sm:grid-cols-2 gap-5 lg:hidden">
+          {[classroom, study, lab, community].map((item) => (
+            <GalleryBlock
+              key={item.title}
+              image={item.image}
+              title={item.title}
+              category={item.category}
+              height="h-56 sm:h-72"
+            />
+          ))}
+        </div>
+
+        {/* Desktop: original masonry layout */}
+        <div className="hidden lg:grid lg:grid-cols-3 gap-6 mt-16">
 
           {/* Left Column */}
-
           <div className="space-y-6">
-
-            <GalleryBlock
-              image={classroom.image}
-              title={classroom.title}
-              category={classroom.category}
-              height="h-[420px]"
-            />
-
-            <GalleryBlock
-              image={study.image}
-              title={study.title}
-              category={study.category}
-              height="h-[280px]"
-            />
-
+            <GalleryBlock image={classroom.image} title={classroom.title} category={classroom.category} height="h-[420px]" />
+            <GalleryBlock image={study.image} title={study.title} category={study.category} height="h-[280px]" />
           </div>
 
           {/* Center Column */}
-
-          <GalleryBlock
-            image={lab.image}
-            title={lab.title}
-            category={lab.category}
-            height="h-[720px]"
-          />
+          <GalleryBlock image={lab.image} title={lab.title} category={lab.category} height="h-[720px]" />
 
           {/* Right Column */}
-
-          <GalleryBlock
-            image={community.image}
-            title={community.title}
-            category={community.category}
-            height="h-[720px]"
-          />
+          <GalleryBlock image={community.image} title={community.title} category={community.category} height="h-[720px]" />
 
         </div>
 

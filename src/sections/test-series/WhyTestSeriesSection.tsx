@@ -44,7 +44,7 @@ export default function WhyTestSeriesSection() {
             Why Test Series Matters
           </p>
 
-          <h2 className="mb-4 text-4xl font-bold text-[#162a6c]">
+          <h2 className="mb-4 text-3xl md:text-4xl font-bold text-[#162a6c]">
             Regular Testing Creates Better Results
           </h2>
 

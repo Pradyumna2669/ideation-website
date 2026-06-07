@@ -15,7 +15,7 @@ const JournalHero = () => {
               Ideation Welfare Society
             </p>
 
-            <h1 className="mt-4 text-5xl lg:text-6xl font-bold leading-tight text-blue-950">
+            <h1 className="mt-4 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-blue-950">
 
               International Journal
               of Research

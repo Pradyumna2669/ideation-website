@@ -27,7 +27,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="py-24 bg-white"
+      className="py-14 md:py-24 bg-white"
     >
       <div className="max-w-7xl mx-auto px-6">
 
@@ -36,7 +36,7 @@ export default function AboutSection() {
           subtitle="Shaping Minds Since 2009"
         />
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center mt-16">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center mt-10 md:mt-16">
 
           {/* Images */}
 
@@ -48,7 +48,7 @@ export default function AboutSection() {
                 alt="Classroom"
                 className="
                   w-full
-                  h-[340px]
+                  h-48 sm:h-64 md:h-[280px] lg:h-[340px]
                   object-cover
                   rounded-3xl
                   shadow-lg
@@ -61,7 +61,7 @@ export default function AboutSection() {
               alt="Activity"
               className="
                 w-full
-                h-52
+                h-36 md:h-52
                 object-cover
                 rounded-3xl
                 shadow-lg
@@ -73,7 +73,7 @@ export default function AboutSection() {
               alt="Students"
               className="
                 w-full
-                h-52
+                h-36 md:h-52
                 object-cover
                 rounded-3xl
                 shadow-lg
@@ -101,7 +101,7 @@ export default function AboutSection() {
             <h3
               className="
                 mt-4
-                text-4xl
+                text-3xl md:text-4xl
                 font-bold
                 text-slate-900
                 leading-tight
@@ -163,11 +163,11 @@ export default function AboutSection() {
 
         <div
           className="
-            mt-24
+            mt-14 md:mt-24
             grid
             grid-cols-2
             lg:grid-cols-4
-            gap-6
+            gap-4 md:gap-6
           "
         >
           {stats.map((item) => (
@@ -176,7 +176,7 @@ export default function AboutSection() {
               className="
                 bg-slate-50
                 rounded-2xl
-                p-8
+                p-5 md:p-8
                 text-center
                 border
                 border-slate-100
@@ -184,7 +184,7 @@ export default function AboutSection() {
             >
               <h4
                 className="
-                  text-4xl
+                  text-3xl md:text-4xl
                   font-bold
                   text-blue-600
                 "
@@ -197,6 +197,7 @@ export default function AboutSection() {
                   mt-2
                   text-slate-600
                   font-medium
+                  text-sm md:text-base
                 "
               >
                 {item.label}

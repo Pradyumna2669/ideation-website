@@ -44,7 +44,7 @@ const posters = [
 
 export default function AchievementsSection() {
   return (
-    <section className="py-24 bg-slate-50">
+    <section id="achievements" className="py-14 md:py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
 
         <SectionHeading
@@ -88,8 +88,8 @@ export default function AchievementsSection() {
 
         {/* Featured Results */}
 
-        <div className="mt-24 text-center">
-          <h3 className="text-3xl font-bold text-slate-900">
+        <div className="mt-16 md:mt-24 text-center">
+          <h3 className="text-2xl md:text-3xl font-bold text-slate-900">
             Featured Student Success Stories
           </h3>
 
@@ -98,7 +98,7 @@ export default function AchievementsSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 md:mt-12">
           {posters.map((poster) => (
             <div
               key={poster.title}

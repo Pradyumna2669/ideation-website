@@ -1,10 +1,10 @@
 const ContactForm = () => {
   return (
-    <section className="bg-slate-50 py-24">
+    <section className="bg-slate-50 py-14 md:py-24">
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
           {/* LEFT SIDE */}
           <div>
@@ -13,7 +13,7 @@ const ContactForm = () => {
               Contact Ideation Welfare Society
             </p>
 
-            <h1 className="mt-4 text-5xl font-bold text-blue-950 leading-tight">
+            <h1 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold text-blue-950 leading-tight">
 
               Let’s Start
               Your Academic Journey
