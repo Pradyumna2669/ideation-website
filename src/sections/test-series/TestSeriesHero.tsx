@@ -1,101 +1,111 @@
-const TestSeriesHero = () => {
+// sections/test-series/HeroSection.tsx
+
+import heroImage from "../../assets/test-series/test-series-hero.jpeg";
+
+export default function HeroSection() {
   return (
-    <section className="bg-slate-50 py-20">
+    <section className="relative overflow-hidden">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${heroImage})`,
+        }}
+      />
 
-      <div className="max-w-7xl mx-auto px-6">
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-[#0f1f5c]/75" />
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-
-          {/* LEFT */}
-          <div>
-
-            <p className="text-orange-500 font-semibold uppercase tracking-wider">
-              Ideation Welfare Society
+      {/* Content */}
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="flex min-h-[75vh] items-center py-20">
+          <div className="max-w-3xl text-white">
+            {/* Label */}
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-orange-400">
+              Ideation Test Series
             </p>
 
-            <h1 className="mt-4 text-5xl lg:text-6xl font-bold leading-tight text-blue-950">
-
-              Ideation Test Series
-
+            {/* Heading */}
+            <h1 className="mb-6 text-5xl font-bold leading-tight md:text-6xl">
+              Practice Like The
+              <span className="block text-orange-400">
+                Final Exam.
+              </span>
+              Perform Like A Topper.
             </h1>
 
-            <p className="mt-8 text-lg leading-relaxed text-gray-600">
-
-              Structured board-oriented test programs
-              designed to improve performance,
-              examination confidence,
-              and academic discipline.
-
+            {/* Description */}
+            <p className="mb-8 max-w-2xl text-lg leading-relaxed text-slate-200 md:text-xl">
+              Structured test series for Class 10 students designed to improve
+              accuracy, confidence, time management and board examination
+              performance.
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-4">
+            {/* Badges */}
+            <div className="mb-10 flex flex-wrap gap-3">
+              <span className="rounded-full border border-white/20 bg-white/10 px-5 py-2 text-sm font-medium backdrop-blur-sm">
+                Class 10th
+              </span>
 
-              <button className="bg-blue-950 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-900 transition">
-                Enquire Now
-              </button>
+              <span className="rounded-full border border-white/20 bg-white/10 px-5 py-2 text-sm font-medium backdrop-blur-sm">
+                CBSE Board
+              </span>
 
-              <button className="border border-blue-950 text-blue-950 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition">
+              <span className="rounded-full border border-white/20 bg-white/10 px-5 py-2 text-sm font-medium backdrop-blur-sm">
+                State Board
+              </span>
+            </div>
+
+            {/* CTA */}
+            <div className="flex flex-wrap gap-4">
+              <button className="rounded-xl bg-orange-500 px-8 py-4 text-sm font-semibold text-white transition hover:bg-orange-600">
                 View Schedule
               </button>
 
+              <button className="rounded-xl border border-white/30 bg-white/10 px-8 py-4 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20">
+                Register Now
+              </button>
             </div>
-
-            {/* STATS */}
-            <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-6">
-
-              <div>
-                <h3 className="text-3xl font-bold text-orange-500">
-                  Weekly
-                </h3>
-
-                <p className="text-gray-600 mt-2">
-                  Assessments
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-3xl font-bold text-orange-500">
-                  Analysis
-                </h3>
-
-                <p className="text-gray-600 mt-2">
-                  Performance Reports
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-3xl font-bold text-orange-500">
-                  Board Prep
-                </h3>
-
-                <p className="text-gray-600 mt-2">
-                  Structured Testing
-                </p>
-              </div>
-
-            </div>
-
           </div>
-
-          {/* RIGHT */}
-          <div className="flex justify-center">
-
-            <div className="w-full max-w-md h-[500px] rounded-3xl border-2 border-dashed border-slate-300 bg-white flex items-center justify-center">
-
-              <p className="text-slate-400 text-lg font-medium">
-                Test Series Image Placeholder
-              </p>
-
-            </div>
-
-          </div>
-
         </div>
-
       </div>
 
+      {/* Bottom Stats */}
+      <div className="relative border-t border-white/10 bg-[#0b173f]/95 backdrop-blur-sm">
+        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-6 py-6 md:grid-cols-4 lg:px-8">
+          <div>
+            <p className="text-2xl font-bold text-orange-400">4</p>
+            <p className="text-sm text-slate-300">
+              Unit Tests
+            </p>
+          </div>
+
+          <div>
+            <p className="text-2xl font-bold text-orange-400">2</p>
+            <p className="text-sm text-slate-300">
+              Full Syllabus Tests
+            </p>
+          </div>
+
+          <div>
+            <p className="text-2xl font-bold text-orange-400">
+              Expert
+            </p>
+            <p className="text-sm text-slate-300">
+              Evaluation
+            </p>
+          </div>
+
+          <div>
+            <p className="text-2xl font-bold text-orange-400">
+              Detailed
+            </p>
+            <p className="text-sm text-slate-300">
+              Error Analysis
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   );
-};
-
-export default TestSeriesHero;
+}
