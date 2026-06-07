@@ -1,106 +1,117 @@
-import { Link } from "react-router-dom";
+// sections/abhyasika/AbhyasikaCTASection.tsx
 
-const AbhyasikaCTA = () => {
+import { MapPin, Phone, ArrowRight } from "lucide-react";
+
+import ctaImage from "../../assets/abhyasika/cta-bg.jpeg";
+
+export default function AbhyasikaCTASection() {
   return (
-    <section className="py-24 bg-blue-950 text-white">
+    <section className="bg-white py-12">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          className="relative overflow-hidden rounded-3xl"
+          style={{
+            backgroundImage: `url(${ctaImage})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-[#162a6c]/90" />
 
-      <div className="max-w-7xl mx-auto px-6">
+          {/* Content */}
+          <div className="relative z-10 px-8 py-10 md:px-12 md:py-12">
+            <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+              {/* Left */}
+              <div className="max-w-2xl">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-300">
+                  Admissions Open
+                </p>
 
-        <div className="text-center">
+                <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white">
+                  Join Ideation Abhyasika
+                </h2>
 
-          <p className="text-orange-400 font-semibold uppercase tracking-wider">
-            Admissions Open 2026
-          </p>
+                <p className="mt-4 text-slate-300">
+                  A disciplined study environment designed to help students
+                  develop consistency, concentration and strong academic habits.
+                </p>
 
-          <h2 className="mt-4 text-4xl lg:text-5xl font-bold leading-tight">
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <span className="rounded-full bg-white/10 px-4 py-2 text-sm text-white">
+                    Structured Study Hours
+                  </span>
 
-            Build Better Study Habits
-            in a Focused Environment
+                  <span className="rounded-full bg-white/10 px-4 py-2 text-sm text-white">
+                    Daily Monitoring
+                  </span>
 
-          </h2>
+                  <span className="rounded-full bg-white/10 px-4 py-2 text-sm text-white">
+                    Academic Guidance
+                  </span>
+                </div>
+              </div>
 
-          <p className="mt-8 text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              {/* Right */}
+              <div className="space-y-4">
+                <a
+                  href="tel:9657778471"
+                  className="
+                    flex
+                    items-center
+                    gap-3
+                    rounded-xl
+                    bg-orange-500
+                    px-6
+                    py-4
+                    font-semibold
+                    text-white
+                    transition
+                    hover:bg-orange-600
+                  "
+                >
+                  <Phone size={18} />
+                  96577 78471
+                </a>
 
-            Join Ideation Abhyasika
-            designed to help students maintain focus,
-            consistency,
-            discipline,
-            and productive academic routines.
+                <a
+                  href="tel:9022443373"
+                  className="
+                    flex
+                    items-center
+                    gap-3
+                    rounded-xl
+                    border
+                    border-white/20
+                    bg-white/10
+                    px-6
+                    py-4
+                    font-semibold
+                    text-white
+                    backdrop-blur-sm
+                    transition
+                    hover:bg-white/20
+                  "
+                >
+                  <ArrowRight size={18} />
+                  90224 43373
+                </a>
+              </div>
+            </div>
 
-          </p>
+            {/* Address */}
+            <div className="mt-8 border-t border-white/10 pt-6">
+              <div className="flex items-center gap-3 text-slate-300">
+                <MapPin size={18} className="text-orange-300" />
 
-          {/* Buttons */}
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
-
-            <Link
-              to="/contact"
-              className="bg-orange-500 hover:bg-orange-600 transition px-8 py-4 rounded-lg font-semibold text-white"
-            >
-              Enquire Now
-            </Link>
-
-            <Link
-              to="/contact"
-              className="border border-white hover:bg-white hover:text-blue-950 transition px-8 py-4 rounded-lg font-semibold"
-            >
-              Visit Facility
-            </Link>
-
+                <span>
+                  Ashok Colony, Morshi Road, Amravati
+                </span>
+              </div>
+            </div>
           </div>
-
-          {/* Contact Grid */}
-          <div className="mt-14 grid sm:grid-cols-3 gap-8">
-
-            <div>
-
-              <h3 className="text-2xl font-bold text-orange-400">
-                Peaceful Environment
-              </h3>
-
-              <p className="mt-3 text-gray-300">
-                Designed for Focused Learning
-              </p>
-
-            </div>
-
-            <div>
-
-              <h3 className="text-2xl font-bold text-orange-400">
-                Contact
-              </h3>
-
-              <p className="mt-3 text-gray-300">
-                +91 9657778471
-              </p>
-
-              <p className="text-gray-300">
-                +91 9022443373
-              </p>
-
-            </div>
-
-            <div>
-
-              <h3 className="text-2xl font-bold text-orange-400">
-                Location
-              </h3>
-
-              <p className="mt-3 text-gray-300">
-                Ashok Colony,
-                Morshi Road,
-                Amravati
-              </p>
-
-            </div>
-
-          </div>
-
         </div>
-
       </div>
-
     </section>
   );
-};
-
-export default AbhyasikaCTA;
+}

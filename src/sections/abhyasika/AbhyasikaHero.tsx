@@ -1,102 +1,117 @@
-const AbhyasikaHero = () => {
+import {
+  BookOpen,
+  Clock3,
+  ShieldCheck,
+  Users,
+} from "lucide-react";
+
+import heroImage from "../../assets/abhyasika/hero.jpg";
+
+const highlights = [
+  {
+    icon: Clock3,
+    text: "Structured Study Hours",
+  },
+  {
+    icon: ShieldCheck,
+    text: "Academic Supervision",
+  },
+  {
+    icon: BookOpen,
+    text: "Focused Self-Study",
+  },
+  {
+    icon: Users,
+    text: "Regular Guidance",
+  },
+];
+
+export default function AbhyasikaHeroSection() {
   return (
-    <section className="bg-slate-50 py-20">
+    <section className="relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src={heroImage}
+          alt="Ideation Abhyasika"
+          className="h-full w-full object-cover"
+        />
 
-      <div className="max-w-7xl mx-auto px-6">
-
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-
-          {/* LEFT */}
-          <div>
-
-            <p className="text-orange-500 font-semibold uppercase tracking-wider">
-              Ideation Welfare Society
-            </p>
-
-            <h1 className="mt-4 text-5xl lg:text-6xl font-bold leading-tight text-blue-950">
-
-              Ideation Abhyasika
-
-            </h1>
-
-            <p className="mt-8 text-lg leading-relaxed text-gray-600">
-
-              A peaceful and disciplined study environment
-              designed to help students
-              maintain focus,
-              consistency,
-              and academic productivity.
-
-            </p>
-
-            <div className="mt-10 flex flex-wrap gap-4">
-
-              <button className="bg-blue-950 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-900 transition">
-                Enquire Now
-              </button>
-
-              <button className="border border-blue-950 text-blue-950 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition">
-                Visit Facility
-              </button>
-
-            </div>
-
-            {/* STATS */}
-            <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-6">
-
-              <div>
-                <h3 className="text-3xl font-bold text-orange-500">
-                  Quiet
-                </h3>
-
-                <p className="text-gray-600 mt-2">
-                  Study Environment
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-3xl font-bold text-orange-500">
-                  Disciplined
-                </h3>
-
-                <p className="text-gray-600 mt-2">
-                  Academic Routine
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-3xl font-bold text-orange-500">
-                  Focused
-                </h3>
-
-                <p className="text-gray-600 mt-2">
-                  Learning Space
-                </p>
-              </div>
-
-            </div>
-
-          </div>
-
-          {/* RIGHT */}
-          <div className="flex justify-center">
-
-            <div className="w-full max-w-md h-[500px] rounded-3xl border-2 border-dashed border-slate-300 bg-white flex items-center justify-center">
-
-              <p className="text-slate-400 text-lg font-medium">
-                Abhyasika Image Placeholder
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
+        <div className="absolute inset-0 bg-[#162a6c]/80" />
       </div>
 
+      {/* Content */}
+      <div className="relative mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
+        <div className="max-w-3xl">
+
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-orange-400">
+            Ideation Abhyasika
+          </p>
+
+          <h1 className="text-4xl font-bold leading-tight text-white md:text-5xl">
+            Structured Study.
+            <br />
+            Focused Learning.
+            <br />
+            Better Results.
+          </h1>
+
+          <p className="mt-5 max-w-2xl text-lg text-slate-200">
+            A disciplined and supportive study environment designed
+            to help students stay consistent, improve concentration
+            and achieve their academic goals.
+          </p>
+
+          {/* Highlights */}
+          <div className="mt-8 grid gap-3 sm:grid-cols-2">
+            {highlights.map((item) => {
+              const Icon = item.icon;
+
+              return (
+                <div
+                  key={item.text}
+                  className="
+                    flex
+                    items-center
+                    gap-3
+                    rounded-xl
+                    border
+                    border-white/10
+                    bg-white/10
+                    px-4
+                    py-3
+                    backdrop-blur-sm
+                  "
+                >
+                  <Icon
+                    size={18}
+                    className="text-orange-400"
+                  />
+
+                  <span className="text-sm font-medium text-white">
+                    {item.text}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Small Info Strip */}
+          <div className="mt-8 flex flex-wrap gap-3">
+            <span className="rounded-full bg-orange-500 px-4 py-2 text-sm font-semibold text-white">
+              Silent Study Environment
+            </span>
+
+            <span className="rounded-full bg-white/10 px-4 py-2 text-sm text-white">
+              Daily Monitoring
+            </span>
+
+            <span className="rounded-full bg-white/10 px-4 py-2 text-sm text-white">
+              Academic Support
+            </span>
+          </div>
+        </div>
+      </div>
     </section>
   );
-};
-
-export default AbhyasikaHero;
+}

@@ -1,17 +1,15 @@
 import AbhyasikaHero from "../../sections/abhyasika/AbhyasikaHero";
-import AbhyasikaOverview from "../../sections/abhyasika/AbhyasikaOverview";
-import FacilitiesSection from "../../sections/abhyasika/FacilitySection";
-import StudyEnvironment from "../../sections/abhyasika/StudyEnvironment";
-import AbhyasikaCTA from "../../sections/abhyasika/AbhyasikaCTA";
+import WhyChooseAbhyasikaSection from "../../sections/abhyasika/WhyChooseAbhyasika";
+import StudyEnvironmentSection from "../../sections/abhyasika/StudyEnvironmentSection";
+import AbhyasikaCTASection from "../../sections/abhyasika/AbhyasikaCTA";
 
 const Abhyasika = () => {
   return (
     <>
       <AbhyasikaHero />
-      <AbhyasikaOverview />
-      <FacilitiesSection />
-      <StudyEnvironment />
-      <AbhyasikaCTA />
+      <WhyChooseAbhyasikaSection />
+      <StudyEnvironmentSection />
+      <AbhyasikaCTASection />
     </>
   );
 };
