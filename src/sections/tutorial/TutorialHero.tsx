@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import hemangiTopper from "../../assets/tutorial/hemangi-topper-2024.jpeg";
 
 const TutorialHero = () => {
@@ -58,13 +59,19 @@ const TutorialHero = () => {
             </div>
 
             <div className="mt-10 flex gap-4">
-              <button>
+              <Link
+                to="/contact"
+                className="px-6 py-3 bg-blue-700 text-white rounded-lg font-semibold hover:bg-blue-800 transition"
+              >
                 Enquire Now
-              </button>
+              </Link>
 
-              <button>
+              <Link
+                to="/contact"
+                className="px-6 py-3 border border-blue-950 text-blue-950 rounded-lg font-semibold hover:bg-blue-50 transition"
+              >
                 Contact Us
-              </button>
+              </Link>
             </div>
 
           </div>

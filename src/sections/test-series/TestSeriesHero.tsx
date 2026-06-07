@@ -1,5 +1,6 @@
 // sections/test-series/HeroSection.tsx
 
+import { Link } from "react-router-dom";
 import heroImage from "../../assets/test-series/test-series-hero.jpeg";
 
 export default function HeroSection() {
@@ -58,13 +59,19 @@ export default function HeroSection() {
 
             {/* CTA */}
             <div className="flex flex-wrap gap-4">
-              <button className="rounded-xl bg-orange-500 px-8 py-4 text-sm font-semibold text-white transition hover:bg-orange-600">
+              <Link
+                to="/contact"
+                className="rounded-xl bg-orange-500 px-8 py-4 text-sm font-semibold text-white transition hover:bg-orange-600"
+              >
                 View Schedule
-              </button>
+              </Link>
 
-              <button className="rounded-xl border border-white/30 bg-white/10 px-8 py-4 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20">
+              <Link
+                to="/contact"
+                className="rounded-xl border border-white/30 bg-white/10 px-8 py-4 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20"
+              >
                 Register Now
-              </button>
+              </Link>
             </div>
           </div>
         </div>

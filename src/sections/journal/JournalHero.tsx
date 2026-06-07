@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const JournalHero = () => {
   return (
     <section className="bg-slate-50 py-20">
@@ -31,13 +33,19 @@ const JournalHero = () => {
 
             <div className="mt-10 flex flex-wrap gap-4">
 
-              <button className="bg-blue-950 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-900 transition">
+              <Link
+                to="/contact"
+                className="bg-blue-950 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-900 transition"
+              >
                 Submit Paper
-              </button>
+              </Link>
 
-              <button className="border border-blue-950 text-blue-950 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition">
+              <Link
+                to="/contact"
+                className="border border-blue-950 text-blue-950 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition"
+              >
                 View Publications
-              </button>
+              </Link>
 
             </div>
 

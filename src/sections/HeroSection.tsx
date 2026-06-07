@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HeroCarousel from "../components/HeroCarousel";
 import logo from "../assets/logo/logo.png";
 
@@ -32,9 +33,9 @@ export default function HeroSection() {
                 Explore Institutions
               </button>
 
-              <button className="px-6 py-3 border border-white rounded-lg">
+              <Link to="/contact" className="px-6 py-3 border border-white rounded-lg text-white hover:bg-white hover:text-blue-950 transition">
                 Contact Us
-              </button>
+              </Link>
             </div>
 
           </div>

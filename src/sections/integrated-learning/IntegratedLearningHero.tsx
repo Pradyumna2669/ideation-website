@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroImage from "../../assets/integrated-learning/microscope.jpeg";
 
 const boards = [
@@ -104,7 +105,8 @@ const IntegratedLearningHero = () => {
 
             <div className="mt-8 flex flex-wrap gap-3">
 
-              <button
+              <Link
+                to="/contact"
                 className="
                   px-6
                   py-3
@@ -117,9 +119,10 @@ const IntegratedLearningHero = () => {
                 "
               >
                 Enquire Now
-              </button>
+              </Link>
 
-              <button
+              <Link
+                to="/contact"
                 className="
                   px-6
                   py-3
@@ -133,7 +136,7 @@ const IntegratedLearningHero = () => {
                 "
               >
                 Learn More
-              </button>
+              </Link>
 
             </div>
 

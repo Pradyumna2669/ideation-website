@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import societyLogo from "../assets/logo/logo.png";
 
 export default function Navbar() {
@@ -27,7 +28,7 @@ export default function Navbar() {
             <a href="#institutions">Institutions</a>
             <a href="#achievements">Achievements</a>
             <a href="#life">Life at Ideation</a>
-            <a href="#contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </nav>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ArrowRight, Phone } from "lucide-react";
 
 import ctaImage from "../../assets/integrated-learning/cta.jpeg";
@@ -71,7 +72,8 @@ export default function IntegratedLearningCTA() {
 
           <div className="mt-10 flex flex-wrap gap-4">
 
-            <button
+            <Link
+              to="/contact"
               className="
                 inline-flex
                 items-center
@@ -88,9 +90,10 @@ export default function IntegratedLearningCTA() {
             >
               Enquire Now
               <ArrowRight className="w-4 h-4" />
-            </button>
+            </Link>
 
-            <button
+            <Link
+              to="/contact"
               className="
                 inline-flex
                 items-center
@@ -108,7 +111,7 @@ export default function IntegratedLearningCTA() {
             >
               <Phone className="w-4 h-4" />
               Contact Us
-            </button>
+            </Link>
 
           </div>
 
