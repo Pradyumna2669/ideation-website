@@ -12,7 +12,7 @@ const ContactForm = () => {
           <div>
 
             <p className="text-orange-500 font-semibold uppercase tracking-[0.2em] text-sm">
-              Contact Ideathon Welfare Society
+              Contact Ideation Welfare Society
             </p>
 
             <h1 className="mt-3 text-2xl sm:text-4xl md:text-5xl font-bold text-slate-950 leading-tight">
@@ -68,7 +68,7 @@ const ContactForm = () => {
                     </h3>
 
                     <p className="text-sm text-slate-600 mt-1">
-                      +91 96577 78471
+                      +91 99601 26020
                     </p>
 
                     <p className="text-sm text-slate-600">
@@ -117,7 +117,7 @@ const ContactForm = () => {
                     </h3>
 
                     <p className="text-sm text-slate-600 mt-1">
-                      ideathon@example.com
+                      ideation@example.com
                     </p>
                   </div>
 

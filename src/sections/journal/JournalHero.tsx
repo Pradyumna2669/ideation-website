@@ -13,7 +13,7 @@ const JournalHero = () => {
           <div>
 
             <p className="text-orange-500 font-semibold uppercase tracking-wider">
-              Ideathon Welfare Society
+              Ideation Welfare Society
             </p>
 
             <h1 className="mt-4 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-blue-950">

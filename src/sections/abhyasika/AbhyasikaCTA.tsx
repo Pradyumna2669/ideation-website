@@ -29,7 +29,7 @@ export default function AbhyasikaCTASection() {
                 </p>
 
                 <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white">
-                  Join Ideathon Abhyasika
+                  Join Ideation Abhyasika
                 </h2>
 
                 <p className="mt-4 text-slate-300">
@@ -55,7 +55,7 @@ export default function AbhyasikaCTASection() {
               {/* Right */}
               <div className="space-y-4">
                 <a
-                  href="tel:9657778471"
+                  href="tel:9960126020"
                   className="
                     flex
                     items-center
@@ -71,7 +71,7 @@ export default function AbhyasikaCTASection() {
                   "
                 >
                   <Phone size={18} />
-                  96577 78471
+                  99601 26020
                 </a>
 
                 <a

@@ -15,7 +15,7 @@ const TutorialCTA = () => {
           <h2 className="mt-3 text-3xl md:text-4xl font-bold">
             Start Your Academic Journey
             <span className="block">
-              With Ideathon Tutorial
+              With Ideation Tutorial
             </span>
           </h2>
 
@@ -45,7 +45,7 @@ const TutorialCTA = () => {
             </Link>
 
             <a
-              href="tel:9657778471"
+              href="tel:9960126020"
               className="
                 inline-flex
                 items-center
@@ -81,7 +81,7 @@ const TutorialCTA = () => {
             "
           >
             <div className="flex flex-wrap justify-center gap-4">
-              <span>+91 96577 78471</span>
+              <span>+91 99601 26020</span>
               <span>•</span>
               <span>+91 90224 43373</span>
             </div>

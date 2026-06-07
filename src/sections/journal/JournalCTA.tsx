@@ -70,7 +70,7 @@ const JournalCTA = () => {
               </h3>
 
               <p className="mt-3 text-gray-300">
-                +91 9657778471
+                +91 9960126020
               </p>
 
               <p className="text-gray-300">

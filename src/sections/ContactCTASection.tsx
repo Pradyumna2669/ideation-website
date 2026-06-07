@@ -36,7 +36,7 @@ const ContactCTASection = () => {
           </Link>
 
           <a
-            href="tel:9657778471"
+            href="tel:9960126020"
             className="
               rounded-xl
               border
@@ -51,7 +51,7 @@ const ContactCTASection = () => {
               hover:bg-white/20
             "
           >
-            📞 96577 78471
+            📞 99601 26020
           </a>
 
         </div>

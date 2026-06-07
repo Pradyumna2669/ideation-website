@@ -35,7 +35,7 @@ const TutorialAchievements = () => {
           </h2>
 
           <p className="mt-4 text-slate-600">
-            For more than 15 years, Ideathon Tutorial has helped
+            For more than 15 years, Ideation Tutorial has helped
             students achieve academic success through concept-based
             learning, continuous evaluation and dedicated mentorship.
           </p>

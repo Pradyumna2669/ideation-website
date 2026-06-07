@@ -62,7 +62,7 @@ export default function TestSeriesCTASection() {
               <div className="flex flex-col gap-4">
 
                 <a
-                  href="tel:9657778471"
+                  href="tel:9960126020"
                   className="
                     inline-flex
                     items-center
@@ -79,7 +79,7 @@ export default function TestSeriesCTASection() {
                   "
                 >
                   <Phone size={18} />
-                  96577 78471
+                  99601 26020
                 </a>
 
                 <a

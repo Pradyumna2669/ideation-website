@@ -15,7 +15,7 @@ const institutions = [
 const navLinks = [
   { label: "About", href: "#about" },
   { label: "Achievements", href: "#achievements" },
-  { label: "Life at Ideathon", href: "#life" },
+  { label: "Life at Ideation", href: "#life" },
 ];
 
 export default function Navbar() {
@@ -41,12 +41,12 @@ export default function Navbar() {
           >
             <img
               src={societyLogo}
-              alt="Ideathon Welfare Society"
+              alt="Ideation Welfare Society"
               className="h-12 md:h-16 w-auto"
             />
             <div>
               <p className="font-bold text-xs min-[360px]:text-base md:text-xl leading-tight">
-                Ideathon Welfare Society
+                Ideation Welfare Society
               </p>
               <p className="text-xs md:text-sm text-slate-500 hidden sm:block">
                 Shaping Minds Since 2009
@@ -90,7 +90,7 @@ export default function Navbar() {
             </a>
 
             <a href="#life" className="text-sm font-medium hover:text-blue-700 transition-colors">
-              Life at Ideathon
+              Life at Ideation
             </a>
 
             <Link

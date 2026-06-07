@@ -20,7 +20,7 @@ export default function HeroSection() {
           <div className="max-w-3xl text-white">
 
             <p className="uppercase tracking-widest font-semibold text-blue-300 text-sm md:text-base">
-              Ideathon Welfare Society
+              Ideation Welfare Society
             </p>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-3 md:mt-4 leading-tight">

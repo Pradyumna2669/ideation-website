@@ -26,7 +26,7 @@ export default function StudentResultsSection() {
           <div className="overflow-hidden rounded-3xl bg-white shadow-xl">
             <img
               src={resultsPoster}
-              alt="Ideathon Test Series Student Results"
+              alt="Ideation Test Series Student Results"
               className="h-full w-full object-cover"
             />
           </div>

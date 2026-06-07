@@ -11,11 +11,11 @@ const TutorialHero = () => {
 
           <div>
             <p className="uppercase tracking-[0.25em] text-blue-900 font-semibold text-sm">
-              Ideathon Welfare Society
+              Ideation Welfare Society
             </p>
 
             <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 leading-tight">
-              Ideathon
+              Ideation
               <span className="block text-orange-600">
                 Tutorial
               </span>

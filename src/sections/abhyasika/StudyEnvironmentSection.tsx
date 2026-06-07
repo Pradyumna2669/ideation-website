@@ -127,7 +127,7 @@ export default function StudyEnvironmentSection() {
         <div className="mt-8">
           <div className="mb-6 text-center">
             <h3 className="text-2xl font-bold text-blue-900">
-              Inside Ideathon Abhyasika
+              Inside Ideation Abhyasika
             </h3>
 
             <p className="mt-2 text-slate-600">

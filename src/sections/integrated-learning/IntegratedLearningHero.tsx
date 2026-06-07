@@ -36,7 +36,7 @@ const IntegratedLearningHero = () => {
           <div>
 
             <p className="text-orange-500 font-semibold uppercase tracking-[0.2em]">
-              Ideathon Welfare Society
+              Ideation Welfare Society
             </p>
 
             <h1 className="mt-4 text-4xl lg:text-5xl font-bold text-blue-950 leading-tight">
