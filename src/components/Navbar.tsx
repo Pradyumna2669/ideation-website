@@ -13,7 +13,7 @@ const institutions = [
 ];
 
 const navLinks = [
-  { label: "About", href: "#about" },
+  { label: "About", href: "/about" },
   { label: "Achievements", href: "#achievements" },
   { label: "Life at Ideation", href: "#life" },
 ];
@@ -57,9 +57,9 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8 lg:gap-10">
 
-            <a href="#about" className="text-sm font-medium hover:text-blue-700 transition-colors">
+            <Link to="/about" className="text-sm font-medium hover:text-blue-700 transition-colors">
               About
-            </a>
+            </Link>
 
             {/* Institutions Dropdown */}
             <div className="group relative">
@@ -133,16 +133,28 @@ export default function Navbar() {
         <div className="md:hidden border-t border-slate-200 bg-white">
           <nav className="px-4 py-4 space-y-1">
 
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={closeMobile}
-                className="block px-4 py-3 rounded-xl text-slate-700 font-medium hover:bg-slate-50 hover:text-blue-700 transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) => {
+              const className = "block px-4 py-3 rounded-xl text-slate-700 font-medium hover:bg-slate-50 hover:text-blue-700 transition-colors";
+              return link.href.startsWith("#") ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={closeMobile}
+                  className={className}
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  onClick={closeMobile}
+                  className={className}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
 
             {/* Institutions accordion */}
             <div>
