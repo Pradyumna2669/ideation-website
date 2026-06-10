@@ -1,6 +1,9 @@
+import DineshSD from "../../assets/about/DineshSD.jpeg"
+import VivekVP from "../../assets/about/VivekVP.jpeg"
+
 const mentors = [
   {
-    initials: "DS",
+    image: DineshSD,
     name: "Dr. Dinesh S. Datar",
     designation: "Senior Academic Mentor",
     meta: "20+ Years Experience • 25 Publications",
@@ -22,7 +25,7 @@ const mentors = [
   },
 
   {
-    initials: "VV",
+    image: VivekVP,
     name: "Dr. Vivek V. Paithankar",
     designation: "Senior Academic Mentor",
     meta: "20+ Years Experience • 200 Publications • 1 Patent",
@@ -83,23 +86,11 @@ export default function MentorsSection() {
 
               <div className="flex items-center gap-4">
 
-                <div
-                  className="
-                    flex
-                    h-14
-                    w-14
-                    shrink-0
-                    items-center
-                    justify-center
-                    rounded-full
-                    bg-blue-100
-                    text-lg
-                    font-bold
-                    text-blue-950
-                  "
-                >
-                  {mentor.initials}
-                </div>
+                <img
+                  src={mentor.image}
+                  alt={mentor.name}
+                  className="w-20 h-20 md:w-24 md:h-24 shrink-0 rounded-full object-cover shadow-sm"
+                />
 
                 <div className="min-w-0">
                   <h3 className="text-xl font-bold text-blue-950">
